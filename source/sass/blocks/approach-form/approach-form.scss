@@ -1,0 +1,133 @@
+.approach-form {
+  padding: 20px;
+  
+  background-color: #ffffff;
+  border: 1px solid #00b4f0;
+  border-radius: 0 0 8px 8px;
+}
+
+.approach-form__title {
+  margin: 0;
+  margin-bottom: 24px;
+  
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.approach-form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.approach-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.approach-form__label,
+.approach-form__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.approach-form__label {
+  margin-bottom: 8px;
+}
+
+.approach-form__input {
+  padding: 12px 16px;
+
+  font-size: 16px;
+  line-height: 24px;
+  
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: none;
+
+  transition: border-color 0.2s linear;
+}
+
+.approach-form__input::-ms-clear {
+  display: none;
+}
+
+.approach-form__input:hover,
+.approach-form__input:focus {
+  border-color: green;
+}
+
+.approach-form__group {
+  margin-bottom: 16px;
+}
+
+.approach-form__label-optional {
+  margin-left: 8px;
+  
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.approach-form__btn {
+  width: 100%;
+  padding: 12px 24px;
+  
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #0d870d;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.approach-form__btn:hover,
+.approach-form__btn:focus {
+  background-color: rgba($color: green, $alpha: 0.7);
+}
+
+.approach-form__btn:active {
+  background-color: rgba($color: green, $alpha: 0.9);
+}
+
+@media (min-width: 551px) {
+  .approach-form {
+    padding: 32px;
+  }
+
+  .approach-form__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 701px) {
+  .approach-form {
+    width: 50%;
+    padding: 32px 20px;
+
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+@media (min-width: 961px) {
+  .approach-form {
+    padding: 48px;
+  }
+
+  .approach-form__group {
+    margin-bottom: 24px;
+  }
+
+  .approach-form__label-optional {
+    margin-right: 3px;
+  }
+}

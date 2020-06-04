@@ -1,0 +1,216 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-header .site-list {
+  display: flex;
+}
+
+.page-footer .site-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.site-list__link {
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+
+  outline: none;
+}
+
+.page-footer .site-list__link {
+  display: inline-block;
+  padding: 10px 10px;
+  
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: color 0.2s linear;
+}
+
+.page-footer .site-list__link:not(.site-list__link--active):hover,
+.page-footer .site-list__link:not(.site-list__link--active):focus {
+  color: #ffffff;
+}
+
+.page-footer .site-list__link:not(.site-list__link--active):active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer__copyright {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header .site-list {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    z-index: 1000;
+    
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 0;
+    height: 100vh;
+    padding-top: 20px;
+
+    background-color: $main-black;
+
+    transition: max-width 0.2s linear;
+  }
+
+  .page--nojs .page-header .site-list {
+    position: static;
+
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding-top: 0;
+  }
+  
+  .page--nojs .page-header .site-list__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .page-header .site-list__link {
+    display: none;
+    padding-top: 14px;
+    padding-left: 70px;
+    padding-bottom: 14px;
+  }
+  
+  .page--nojs .page-header .site-list__link {
+    display: block;
+    padding: 0;
+  }
+
+  .page--nojs .page-header .site-list__link--active {
+    position: relative;
+  }
+
+  .page--nojs .page-header .site-list__link--active::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -15px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+  
+  .page-header .menu-opened {
+    max-width: 100%;
+  }
+
+  .menu-opened .site-list__link {
+    display: block;
+  }
+
+  .menu-opened .site-list__link--active {
+    position: relative;
+
+    font-weight: 700;
+  }
+
+  .menu-opened .site-list__link--active::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 34px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  .menu-opened .site-list__link:not(.site-list__link--active):hover,
+  .menu-opened .site-list__link:not(.site-list__link--active):focus {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 551px) {
+  .page-header .site-list {  
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .page-header .site-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .page-header .site-list__item:first-child {
+    margin-left: auto;
+  }
+  
+  .page-header .site-list__link {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 57px;
+    padding-bottom: 33px;
+  }
+
+  .page-header .site-list__link--active {
+    border-bottom: 4px solid #ffffff;
+  }
+
+  .page-header .site-list__link:not(.site-list__link--active):hover,
+  .page-header .site-list__link:not(.site-list__link--active):focus {
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .page-header .site-list__link:not(.site-list__link--active):active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media (max-width: 999px) {
+  .page-footer .site-list {
+    column-width: 230px;
+  }  
+}
+
+@media (min-width: 1000px) {
+  .page-footer .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-footer .site-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .page-footer .site-list__link {
+    padding: 10px 16px;
+  }
+  
+  .page-footer .site-list__item:first-child .site-list__link {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,33 @@
+@media (min-width: 551px) {
+  .main-nav {
+    position: relative;
+    
+    width: 78%;
+    width: 100%;
+    overflow: hidden
+  }
+
+  .main-nav::before,
+  .main-nav::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+
+    width: 15px;
+    height: 100%;
+  }
+
+  .main-nav::before {
+    left: 0;
+    
+    background: linear-gradient(to right, #000000, 20%, rgba(0, 0, 0, 0.1));
+  }
+
+  .main-nav::after {
+    right: 0;
+    
+    background: linear-gradient(to left, #000000, 20%, rgba(0, 0, 0, 0.1));
+  }
+  
+}

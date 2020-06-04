@@ -1,0 +1,141 @@
+.approach-intro {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  color: #ffffff;
+  
+  background-color: $main-black;
+}
+
+.approach-intro__title,
+.approach-intro__suptitle,
+.approach-intro__descr,
+.approach-intro__subtitle {
+  margin: 0;
+}
+
+.approach-intro__suptitle,
+.approach-intro__descr,
+.approach-intro__line,
+.approach-intro__icon {
+  margin-bottom: 25px;
+}
+
+.approach-intro__title {
+  margin-bottom: 24px;
+
+  font-size: 50px;
+  line-height: 150%;
+}
+
+.approach-intro__suptitle {
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.approach-intro__descr {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.approach-intro__line {
+  display: block;
+  height: 1px;
+
+  background-color: #ffffff;
+}
+
+.approach-intro__icon {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.approach-intro__subtitle {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media (min-width: 551px) {
+  .approach-intro {
+    padding-top: 94px;
+    padding-bottom: 100px;
+  }
+
+  .approach-intro__title {
+    font-size: 75px;
+  }
+}
+
+@media (min-width: 701px) {
+  .approach-intro {
+    background-image: url("../sass/blocks/approach-intro/img/approach-team-img.png");
+    background-repeat: no-repeat;
+    background-position: right bottom 15%;
+    background-size: 30%;
+  }
+  
+  .approach-intro__descr {
+    max-width: 60%;
+    margin-bottom: 35px;
+  }
+  
+  .approach-intro__line {
+    max-width: 60%;
+  }
+  
+  .approach-intro__subtitle {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 961px) {
+  .approach-intro {
+    background-size: 40%;
+    background-position: 100%;
+  }
+  
+  .approach-intro__inner {
+    max-width: 592px;
+  }
+
+  .approach-intro__title {
+    margin-bottom: 29px;
+    
+    font-size: 90px;
+  }
+
+  .approach-intro__suptitle {
+    margin-bottom: 42px;
+
+    line-height: 160%;
+  }
+  
+  .approach-intro__descr,
+  .approach-intro__line,
+  .approach-intro__subtitle {
+    max-width: 100%;
+  }
+
+  .approach-intro__descr {
+    margin-bottom: 42px;
+  }
+
+  .approach-intro__line {
+    margin-bottom: 43px;
+  }
+
+  .approach-intro__icon {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .approach-intro {
+    background-size: auto;
+  }
+} 

@@ -1,0 +1,31 @@
+{
+  "name": "bboss-test",
+  "version": "1.0.0",
+  "description": "Тестовое задание для bboss.io",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Havaj-Ilyasov/bboss-test.git"
+  },
+  "author": "Havaj Ilyasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Havaj-Ilyasov/bboss-test/issues"
+  },
+  "homepage": "https://github.com/Havaj-Ilyasov/bboss-test#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
